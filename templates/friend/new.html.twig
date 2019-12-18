@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Friend{% endblock %}
+
+{% block body %}
+    <h1>Create new Friend</h1>
+
+    {{ include('friend/_form.html.twig') }}
+
+    <a href="{{ path('friend_index') }}">back to list</a>
+{% endblock %}
